@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double bal,rem;
+    int amt;
+    cin>>amt>>bal;
+
+    if(amt+0.5<=bal && amt%5==0)
+    {
+            rem=bal-double(amt)-double(0.50);
+            cout<<fixed<<setprecision(2)<<rem;
+    }
+    else
+        cout<<fixed<<setprecision(2)<<bal;
+
+    return 0;
+
+}
+
